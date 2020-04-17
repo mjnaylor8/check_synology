@@ -186,7 +186,7 @@ if mode == 'disk':
         if critical and critical < int(disk_temp) or int(disk_status_nr) == (4 or 5):
             state = 'CRITICAL'
 
-        output += ' - ' + disk_name + ': Status: ' + disk_status + ', Temperature: ' + disk_temp + 'C' + 'ID ' +  disk_id + ' Model ' + disk_model + ' Type ' + disk_type
+        output += ' - ' + disk_name + ': Status: ' + disk_status + ', Temperature: ' + disk_temp + 'C' + ' ID ' +  disk_id + ' Model ' + disk_model + ' Type ' + disk_type
         #Remove spaces from disk name for performance data
         disk_name = disk_name.replace(" ", "")
         perfdata += ' temperature_' + disk_name + '=' + disk_temp + 'C '
